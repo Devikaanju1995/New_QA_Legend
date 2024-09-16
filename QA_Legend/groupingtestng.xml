@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<include name="sanity"></include>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="listeners.Annotation_Transformer"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+	<parameter name="browser" value="Chrome"></parameter>
+    <classes>
+     
+      <class name="testscript.Reset_Page_Test"/>
+      <class name="testscript.Add_User_Page_Test"/>
+      <class name="testscript.Home_Page_Test"/> 
+      <class name="testscript.Login_Page_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
