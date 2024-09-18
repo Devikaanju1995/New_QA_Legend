@@ -58,10 +58,10 @@ public void initializebrowser(String browser)
 				 throw new RuntimeException("Invalid browser");
 			 }
 			 driver.manage().window().maximize();
-		     //driver.get("https://qalegend.com/billing/public/login");
+		   
 			 driver.get(prop.getProperty("url"));
 		 }
-		 @BeforeMethod
+		 @BeforeMethod(alwaysRun=true)
 		 
 		 public void setup()
 

@@ -25,10 +25,8 @@ public class Stock_Transfers_Page_Test extends Base_Class
     login.enter_Password(password);
 	HomePage home=login.click_onLogin_Button();
 	home.verify_Clickon_Endtour_Button();
-	StockTransferpage stocktransferpage=new StockTransferpage(driver);
-	stocktransferpage.click_On_Stock_Transfer();
-	stocktransferpage.click_On_List_Stock_Transfer();
-	AllStockTransferPage allstock=new AllStockTransferPage(driver);
+	StockTransferpage stocktransferpage=home.click_On_Stock_Transfer();
+	AllStockTransferPage allstock=stocktransferpage.click_On_List_Stock_Transfer();
 	allstock.Enter_Searh_Item(stocks);
 	String actualdata=allstock.get_Table_Data();
 	Assert.assertEquals(actualdata, stocks,Messages.IVALIDSTOCKSEARCH);

@@ -13,7 +13,7 @@
 	<parameter name="browser" value="Chrome"></parameter>
     <classes>
      
-      <class name="testscript.Reset_Page_Test"/>
+     <class name="testscript.Reset_Page_Test"/>
       <class name="testscript.Add_User_Page_Test"/>
       <class name="testscript.Home_Page_Test"/> 
       <class name="testscript.Login_Page_Test"/>

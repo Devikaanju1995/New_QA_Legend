@@ -12,4 +12,5 @@ public static final String USERDATE="Date Missmatch";
 public static final String UPDATE="Unsuccessfull";
 public static final String IVALIDSTOCKSEARCH="invaliddata";
 public static final String INVALIDPROFIT="invalidprofit";
+
 }

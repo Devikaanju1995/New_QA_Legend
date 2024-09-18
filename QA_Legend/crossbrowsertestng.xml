@@ -22,7 +22,7 @@
 	  <class name="testscript.Home_Page_Test"/>
 	  </classes>
 	  </test>
-	  <test thread-count="5" name="addUserPageTest">
+	 <!-- <test thread-count="5" name="addUserPageTest">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testscript.Add_User_Page_Test"/>
@@ -32,7 +32,7 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="testscript.Reset_Page_Test"/>
-		</classes>
+		</classes>-->
 
-  </test> <!-- Test -->
+   <!-- Test -->
 </suite> <!-- Suite -->

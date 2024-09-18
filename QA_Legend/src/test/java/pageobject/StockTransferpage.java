@@ -13,20 +13,17 @@ public class StockTransferpage
 		this.driver=driver;
 		PageFactory.initElements(driver, this);     ///to initialize webdriver, page factorty in selenium package
 	}
-	@FindBy(xpath="//i[@class='fa fa-truck']")
-	WebElement clickstocktransfer;
+	
 	
 	@FindBy(xpath="//a[@href='https://qalegend.com/billing/public/stock-transfers']")
 	WebElement liststocktransfer;
 	
-	public void click_On_Stock_Transfer() 
-	{
-		clickstocktransfer.click();
-	}
 	
-	public void click_On_List_Stock_Transfer() 
+	
+	public AllStockTransferPage click_On_List_Stock_Transfer() 
 	{
 		liststocktransfer.click();
+		return new AllStockTransferPage(driver);
 	}
 	
 	

@@ -1,31 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-15T19:47:39 IST" name="Default suite" finished-at="2024-09-15T19:48:01 IST" duration-ms="22582">
+  <suite started-at="2024-09-18T00:34:57 IST" name="Suite" finished-at="2024-09-18T00:35:51 IST" duration-ms="53814">
     <groups>
+      <group name="regression">
+        <method signature="Login_Page_Test.verify_Loginwith_Valid_Credentials()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" name="verify_Loginwith_Valid_Credentials" class="testscript.Login_Page_Test"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="Login_Page_Test.verify_Loginwith_Valid_Credentials()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" name="verify_Loginwith_Valid_Credentials" class="testscript.Login_Page_Test"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-09-15T19:47:39 IST" name="Default test" finished-at="2024-09-15T19:48:01 IST" duration-ms="22582">
-      <class name="testscript.Todays_Profit_Page_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Todays_Profit_Page_Test@543295b0]" started-at="2024-09-15T19:47:39 IST" name="setup" finished-at="2024-09-15T19:47:45 IST" duration-ms="5964" status="PASS">
+    <test started-at="2024-09-18T00:34:57 IST" name="loginPageTest" finished-at="2024-09-18T00:35:51 IST" duration-ms="53814">
+      <class name="testscript.Login_Page_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:34:57 IST" name="setup" finished-at="2024-09-18T00:35:05 IST" duration-ms="7787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="display_Finacial_Year_Profit()[pri:0, instance:testscript.Todays_Profit_Page_Test@543295b0]" started-at="2024-09-15T19:47:45 IST" name="display_Finacial_Year_Profit" finished-at="2024-09-15T19:48:01 IST" duration-ms="16235" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verify_Loginwith_Valid_Credentials()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:05 IST" name="verify_Loginwith_Valid_Credentials" finished-at="2024-09-18T00:35:10 IST" duration-ms="5175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Loginwith_Valid_Credentials -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:10 IST" name="closeBrowser" finished-at="2024-09-18T00:35:10 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Loginwith_Valid_Credentials status=SUCCESS method=Login_Page_Test.verify_Loginwith_Valid_Credentials()[pri:0, instance:testscript.Login_Page_Test@1283bb96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:10 IST" name="setup" finished-at="2024-09-18T00:35:17 IST" duration-ms="6596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:17 IST" name="verify_Errormessage_While_Loginwith_Invalid_Credentials" data-provider="InvalidCredentials" finished-at="2024-09-18T00:35:20 IST" duration-ms="2850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aadmiim]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Errormessage_While_Loginwith_Invalid_Credentials -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:20 IST" name="setup" finished-at="2024-09-18T00:35:37 IST" duration-ms="17475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:20 IST" name="closeBrowser" finished-at="2024-09-18T00:35:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Errormessage_While_Loginwith_Invalid_Credentials status=SUCCESS method=Login_Page_Test.verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:37 IST" name="verify_Errormessage_While_Loginwith_Invalid_Credentials" data-provider="InvalidCredentials" finished-at="2024-09-18T00:35:40 IST" duration-ms="2346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[112233]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Errormessage_While_Loginwith_Invalid_Credentials -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:40 IST" name="closeBrowser" finished-at="2024-09-18T00:35:40 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_Errormessage_While_Loginwith_Invalid_Credentials status=SUCCESS method=Login_Page_Test.verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:40 IST" name="setup" finished-at="2024-09-18T00:35:51 IST" duration-ms="11193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:51 IST" name="verify_Errormessage_While_Loginwith_Invalid_Credentials" data-provider="InvalidCredentials" finished-at="2024-09-18T00:35:51 IST" duration-ms="232" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaddm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[44444444]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[invalidprofit expected [₹ 337,940,543.81] but found []]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ba31e769f5d9d3ea1fdcae0b7e98c2, findElement {value=username, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUDHISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ba31e769f5d9d3ea1fdcae0b7e98c2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: invalidprofit expected [₹ 337,940,543.81] but found []
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testscript.Todays_Profit_Page_Test.display_Finacial_Year_Profit(Todays_Profit_Page_Test.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ba31e769f5d9d3ea1fdcae0b7e98c2, findElement {value=username, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUDHISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ba31e769f5d9d3ea1fdcae0b7e98c2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at testscript.Login_Page_Test.verify_Errormessage_While_Loginwith_Invalid_Credentials(Login_Page_Test.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -34,40 +162,103 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- display_Finacial_Year_Profit -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.Todays_Profit_Page_Test@543295b0]" started-at="2024-09-15T19:48:01 IST" name="closeBrowser" finished-at="2024-09-15T19:48:01 IST" duration-ms="287" status="PASS">
+        </test-method> <!-- verify_Errormessage_While_Loginwith_Invalid_Credentials -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.Login_Page_Test@1283bb96]" started-at="2024-09-18T00:35:51 IST" name="closeBrowser" finished-at="2024-09-18T00:35:51 IST" duration-ms="9" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=display_Finacial_Year_Profit status=FAILURE method=Todays_Profit_Page_Test.display_Finacial_Year_Profit()[pri:0, instance:testscript.Todays_Profit_Page_Test@543295b0] output={null}]]]>
+                <![CDATA[[TestResult name=verify_Errormessage_While_Loginwith_Invalid_Credentials status=FAILURE method=Login_Page_Test.verify_Errormessage_While_Loginwith_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:testscript.Login_Page_Test@1283bb96] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ba31e769f5d9d3ea1fdcae0b7e98c2, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUDHISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ba31e769f5d9d3ea1fdcae0b7e98c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ba31e769f5d9d3ea1fdcae0b7e98c2, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SUDHISH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59872}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59872/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ba31e769f5d9d3ea1fdcae0b7e98c2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
+at automationcore.Base_Class.takeScreenshot(Base_Class.java:84)
+at automationcore.Base_Class.closeBrowser(Base_Class.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testscript.Todays_Profit_Page_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testscript.Login_Page_Test -->
+    </test> <!-- loginPageTest -->
+  </suite> <!-- Suite -->
 </testng-results>

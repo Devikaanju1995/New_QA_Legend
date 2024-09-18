@@ -38,6 +38,9 @@ public class HomePage
 	@FindBy(xpath="//div[@class='m-8 pull-left mt-15 hidden-xs']")
 	WebElement login_date;
 	
+	@FindBy(xpath="//i[@class='fa fa-truck']")
+	WebElement clickstocktransfer;
+	
 	@FindBy(xpath="//button[@id='view_todays_profit']")
 	WebElement todayprofit;
 	
@@ -62,9 +65,11 @@ public void click_On_Adminabc()
 {
 	admin.click();
 }
-public void click_On_Profile_Field()
+public AdminUpdates click_On_Profile_Field()
 {
 	profilefield.click();
+	return new AdminUpdates(driver);
+	
 }
 
 
@@ -77,8 +82,17 @@ public String get_CurrentDate()
 {
 	return Date_Utility.get_UserLogin_Date("dd-MM-YYYY");
 }
+
+public StockTransferpage click_On_Stock_Transfer() 
+{
+	clickstocktransfer.click();
+	return new StockTransferpage(driver);
+}
+
+
 public void display_Today_Profit()
 {
 	todayprofit.click();
 }
+
 }

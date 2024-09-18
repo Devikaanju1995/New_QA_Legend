@@ -16,7 +16,7 @@ import utilities.Excel_Utility;
 
 public class Login_Page_Test extends Base_Class
 {
-@Test(groups={"regression","sanity"})	
+@Test(groups= {"regression","sanity"})
 public void verify_Loginwith_Valid_Credentials()
 {
 	

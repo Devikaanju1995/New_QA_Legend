@@ -25,9 +25,10 @@ public class AdminUpdates
 	@FindBy(xpath="//div[text()='Profile updated successfully']")
 	WebElement msg ;
 	
-	public void enter_update_Lastname(String changelastname)
+	public HomePage enter_update_Lastname(String changelastname)
 	{
 		changeadminlastname.sendKeys(changelastname);
+		return new HomePage(driver);
 	}
 	public void verify_Update_Button()
 	{
