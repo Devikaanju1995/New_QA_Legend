@@ -7,92 +7,84 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Date_Utility;
 
-public class HomePage 
-{
+public class HomePage {
 	WebDriver driver;
-	public HomePage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver, this);     ///to initialize webdriver, page factorty in selenium package
+
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this); /// to initialize webdriver, page factorty in selenium package
 	}
-	
-	@FindBy(xpath="//button[@class='btn btn-default btn-sm']")
-	WebElement  endtour_button;
-	
-	@FindBy(xpath="//section[@class='content-header']")
-	WebElement  welcome_user_mess;
-	
-	@FindBy(xpath="//span[text()='Admin ']")
-	WebElement  click_admin_user;
-	
-	@FindBy(xpath="//a[@class='dropdown-toggle']")
-	WebElement admin ;
-	
-	@FindBy(xpath="//a[text()='Profile']")
-	WebElement profilefield ;
-	
-	
-	@FindBy(xpath="//a[text()='Sign Out']")
-	WebElement logout_button ;
-	
-	@FindBy(xpath="//div[@class='m-8 pull-left mt-15 hidden-xs']")
+
+	@FindBy(xpath = "//button[@class='btn btn-default btn-sm']")
+	WebElement endtour_button;
+
+	@FindBy(xpath = "//section[@class='content-header']")
+	WebElement welcome_user_mess;
+
+	@FindBy(xpath = "//span[text()='Admin ']")
+	WebElement click_admin_user;
+
+	@FindBy(xpath = "//a[@class='dropdown-toggle']")
+	WebElement admin;
+
+	@FindBy(xpath = "//a[text()='Profile']")
+	WebElement profilefield;
+
+	@FindBy(xpath = "//a[text()='Sign Out']")
+	WebElement logout_button;
+
+	@FindBy(xpath = "//div[@class='m-8 pull-left mt-15 hidden-xs']")
 	WebElement login_date;
-	
-	@FindBy(xpath="//i[@class='fa fa-truck']")
+
+	@FindBy(xpath = "//i[@class='fa fa-truck']")
 	WebElement clickstocktransfer;
-	
-	@FindBy(xpath="//button[@id='view_todays_profit']")
+
+	@FindBy(xpath = "//button[@id='view_todays_profit']")
 	WebElement todayprofit;
-	
-	public void verify_Clickon_Endtour_Button()
-	{
+
+	public void verify_Clickon_Endtour_Button() {
 		endtour_button.click();
 	}
-	public String get_MessageDisplay()
-	{
-		String messagetext= welcome_user_mess.getText();
+
+	public String get_MessageDisplay() {
+		String messagetext = welcome_user_mess.getText();
 		return messagetext;
 	}
-	public void click_On_Admin()
-	{
+
+	public void click_On_Admin() {
 		click_admin_user.click();
 	}
-public void click_Logout()
-{
-	logout_button.click();
-}
-public void click_On_Adminabc()
-{
-	admin.click();
-}
-public AdminUpdates click_On_Profile_Field()
-{
-	profilefield.click();
-	return new AdminUpdates(driver);
-	
-}
 
+	public void click_Logout() {
+		logout_button.click();
+	}
 
-public String get_LoginDate()
-{
-	String logindate=login_date.getText();
-	return logindate;
-}
-public String get_CurrentDate()
-{
-	return Date_Utility.get_UserLogin_Date("dd-MM-YYYY");
-}
+	public void click_On_Adminabc() {
+		admin.click();
+	}
 
-public StockTransferpage click_On_Stock_Transfer() 
-{
-	clickstocktransfer.click();
-	return new StockTransferpage(driver);
-}
+	public AdminUpdates click_On_Profile_Field() {
+		profilefield.click();
+		return new AdminUpdates(driver);
 
+	}
 
-public void display_Today_Profit()
-{
-	todayprofit.click();
-}
+	public String get_LoginDate() {
+		String logindate = login_date.getText();
+		return logindate;
+	}
+
+	public String get_CurrentDate() {
+		return Date_Utility.get_UserLogin_Date("dd-MM-YYYY");
+	}
+
+	public StockTransferpage click_On_Stock_Transfer() {
+		clickstocktransfer.click();
+		return new StockTransferpage(driver);
+	}
+
+	public void display_Today_Profit() {
+		todayprofit.click();
+	}
 
 }

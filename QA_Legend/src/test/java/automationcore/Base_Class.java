@@ -76,7 +76,7 @@ public void initializebrowser(String browser)
 			{
 				takeScreenshot(result);
 			}
-//			driver.close();
+		driver.close();
 		 }
 		public void takeScreenshot(ITestResult result) throws IOException 
 		{
